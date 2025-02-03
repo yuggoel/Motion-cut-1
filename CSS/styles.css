@@ -1,0 +1,110 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body Styling */
+  body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
+  }
+  
+  /* Header Styling */
+  header {
+    text-align: center;
+    padding: 20px 0;
+    background: linear-gradient(90deg, #007bff, #6f42c1);
+    color: white;
+  }
+  
+  header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  
+  header p {
+    font-size: 1.2rem;
+    font-style: italic;
+  }
+  
+  /* Bucket List Section */
+  .bucket-list {
+    margin: 20px auto;
+    max-width: 600px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .bucket-list h2 {
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  
+  .bucket-list ul {
+    list-style-type: none;
+  }
+  
+  .bucket-list li {
+    font-size: 1.1rem;
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #e9ecef;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .bucket-list li .icon {
+    margin-right: 10px;
+    font-size: 1.5rem;
+    color: green;
+  }
+  
+  /* Footer Styling */
+  footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #343a40;
+    color: white;
+    margin-top: 30px;
+  }
+  
+  footer p {
+    margin: 5px 0;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    header h1 {
+      font-size: 2rem;
+    }
+  
+    .bucket-list ul li {
+      font-size: 1rem;
+    }
+  }
+  .bucket-list li:hover {
+    background-color: #d4edda;
+    transform: translateY(-2px);
+    transition: all 0.3s ease-in-out;
+  }
+  header {
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+      
